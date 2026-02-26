@@ -1,11 +1,11 @@
 import axios from "axios";
 
 const API = axios.create({
-    baseURL: "http://localhost:8000",
+    baseURL: import.meta.env.VITE_API_URL, // ✅ FIXED
     withCredentials: false,
 });
 
-// Attach Authorization header from localStorage token automatically
+// Attach Authorization header
 API.interceptors.request.use((config) => {
     const token = localStorage.getItem("token");
     if (token) {
@@ -24,4 +24,6 @@ export const getUsersAPI = () => API.get("/api/v1/user/list");
 export const getMessagesAPI = (senderId, receiverId) =>
     API.get(`/api/messages/${senderId}/${receiverId}`);
 
-export default API;
+export default API;git add .
+git commit -m "fixed api base url"
+git push
