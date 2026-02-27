@@ -1,18 +1,150 @@
-# React + Vite
+# 💬 Real-Time Chat Application (Frontend)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern real-time chat application built using **React + Vite** with **Socket.IO** for instant messaging. This frontend connects to a Node.js backend to provide seamless real-time communication between users.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+* 🔐 User Authentication (Login)
+* 💬 Real-time messaging using Socket.IO
+* 👥 User list with search functionality
+* 🟢 Online/Offline status indicator
+* 📩 Optimistic UI updates (instant message display)
+* 🕒 Message timestamps & date grouping
+* 📱 Responsive and clean UI
+* 🔄 Auto-scroll to latest messages
+* 🚪 Logout functionality
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+---
 
-Note: This will impact Vite dev & build performances.
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+* **Frontend:** React.js (Vite)
+* **State Management:** React Hooks
+* **HTTP Client:** Axios
+* **Real-Time:** Socket.IO Client
+* **Routing:** React Router DOM
+* **Styling:** CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📁 Project Structure
+
+```
+realtimechatapplication-frontend/
+│── public/
+│── src/
+│   ├── api/          # API calls (Axios setup)
+│   ├── components/   # Reusable UI components
+│   ├── pages/        # Login & Chat pages
+│   ├── socket/       # Socket.IO configuration
+│   ├── App.jsx       # Main routing
+│   ├── main.jsx      # Entry point
+│   └── index.css     # Global styles
+│── package.json
+│── vite.config.js
+```
+
+---
+
+## ⚙️ Environment Variables
+
+Create a `.env` file in the root directory:
+
+```
+VITE_API_URL=https://your-backend-url.onrender.com
+```
+
+---
+
+## 📦 Installation
+
+```bash
+git clone https://github.com/your-username/realtimechatapplication-frontend.git
+cd realtimechatapplication-frontend
+npm install
+```
+
+---
+
+## ▶️ Run Locally
+
+```bash
+npm run dev
+```
+
+App will run on:
+
+```
+http://localhost:5173
+```
+
+---
+
+## 🏗️ Build for Production
+
+```bash
+npm run build
+```
+
+---
+
+## 🌐 Deployment
+
+### Vercel (Recommended)
+
+* Framework: **Vite**
+* Build Command:
+
+```
+npm run build
+```
+
+* Output Directory:
+
+```
+dist
+```
+
+---
+
+## 🔗 Backend Repository
+
+👉 Make sure backend is running and deployed
+(Example: Node.js + Express + Socket.IO)
+
+---
+
+## ⚡ Important Notes
+
+* Ensure backend URL is correctly set in `.env`
+* Socket connection uses JWT authentication
+* CORS must be enabled in backend for frontend URL
+* Case-sensitive file imports are important for deployment
+
+---
+
+## 📸 Screenshots
+
+* Login Page
+* Chat Interface
+* Real-time Messaging
+
+*(Add screenshots here if needed)*
+
+---
+
+## 👨‍💻 Author
+
+**Sathwik Raja**
+
+* GitHub: https://github.com/SathwikGoud12
+
+---
+
+## ⭐ If you like this project
+
+Give it a ⭐ on GitHub and share it!
+
+---
