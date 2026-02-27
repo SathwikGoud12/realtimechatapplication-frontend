@@ -136,7 +136,6 @@ export default function Chat() {
       socket.off("receiveMessage");
       socket.off("messageFailed");
       socket.off("roomJoined");
-      socket.disconnect();
     };
   }, [me?.id]);
 
