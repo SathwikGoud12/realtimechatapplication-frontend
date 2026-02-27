@@ -31,7 +31,7 @@ export default function Login({ onSwitchToRegister }) {
             setLoading(false);
         }
     };
-
+console.log("API:", import.meta.env.VITE_API_URL);
     return (
         <div className="auth-container">
             <div className="auth-card">
