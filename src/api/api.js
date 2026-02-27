@@ -24,6 +24,4 @@ export const getUsersAPI = () => API.get("/api/v1/user/list");
 export const getMessagesAPI = (senderId, receiverId) =>
     API.get(`/api/messages/${senderId}/${receiverId}`);
 
-export default API;git add .
-git commit -m "fixed api base url"
-git push
+export default API;

@@ -1,6 +1,6 @@
 import { Routes, Route, Navigate } from "react-router-dom";
-import AuthPage from "./pages/Login";
-import Chat from "./pages/Chat";
+import AuthPage from "./pages/Login.jsx";
+import Chat from "./pages/Chat.jsx";
 
 // Protected route — redirects to / if not authenticated
 function PrivateRoute({ children }) {

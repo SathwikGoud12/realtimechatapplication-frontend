@@ -1,9 +1,7 @@
 import { useEffect, useState, useRef, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-import { getSocket } from "../socket/socket";
 import { getUsersAPI, getMessagesAPI, logoutAPI } from "../api/api";
-
-
+import getSocket from "../socket/socket";
 // ── Helpers ──────────────────────────────────────────────────────────────────
 function getInitials(name = "") {
   return name
