@@ -311,11 +311,12 @@ export default function Chat() {
             </div>
             <button
               id="logout-btn"
-              className="btn btn-icon"
+              className="logout-btn"
               onClick={handleLogout}
               title="Logout"
             >
-              🚪
+              <span className="logout-icon">🚪</span>
+              <span className="logout-label">Logout</span>
             </button>
           </div>
         </div>
